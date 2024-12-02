@@ -34,6 +34,8 @@
                 <img width="70%" src="./imgs/hot-air-balloon.png" alt="">
             </div>
             <div id="result" class="col-6 text-light">
+                <h1 class="overflow-hidden text-center">Welcome to Weather Forecast,</h1>
+                <p>your go-to source for accurate and up-to-date weather forecasts. Whether you need real-time updates or detailed long-term predictions, we keep you informed so you can plan your day with confidence. </p>
             </div>
         </div>
     </div>
@@ -60,14 +62,16 @@
                         const data = details.list
                         data.forEach((dat) => {
                             console.log(dat)
-                            
-                        result.innerHTML = `
-                        <h1 id="place1" class="text-center fw-bold overflow-hidden">${place.value.toUpperCase()}</h1>
-                        <h4  class="text-center overflow-hidden">Now </h4>
-                        <h2 id="temp" class="text-center overflow-hidden">${Math.floor((dat.main.temp)-273)}<sup>o</sup></h2>
-                        <h6 id="desc" class="text-center overflow-hidden">${dat.weather[0].description}</h6>
-                        <h6 id="humid" class="text-center overflow-hidden">Humidity: ${dat.main.humidity} g/m<sup>3</sup></h6>
 
+                            result.innerHTML = `
+                            <div id="display">
+                                    <h1 id="place1" class="text-center fw-bold overflow-hidden">${place.value.toUpperCase()}</h1>
+                                    <h4  class="text-center overflow-hidden">Now </h4>
+                                    <h2 id="temp" class="text-center overflow-hidden">${Math.floor((dat.main.temp) - 273)}<sup>o</sup></h2>
+                                    <h6 id="desc" class="text-center overflow-hidden">${dat.weather[0].description}</h6>
+                                    <h6 id="humid" class="text-center overflow-hidden">Humidity: ${dat.main.humidity} g/m<sup>3</sup></h6>
+
+                            <div/>
                         `
                         })
 

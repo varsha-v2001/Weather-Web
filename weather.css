@@ -21,3 +21,16 @@ body{
     font-family: "Prata", serif;
 
 }
+#display{
+    width: 600px;
+    height: 400px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+    backdrop-filter: blur(8px); 
+    /* backdrop-filter: blur(5px);
+    background-color: black */
+
+}
