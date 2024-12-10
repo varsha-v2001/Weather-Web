@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lugrasimo", serif;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg,rgb(1, 1, 168),rgba(30, 85, 203, 0.762) )
+}
+#place{
+    width: 80%;
+
+}
+#head1{
+    font-family: "Satisfy", serif;
+}
+#place1{
+    font-family: "Prata", serif;
+
+}
+#display{
+    width: 600px;
+    height: 400px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+    backdrop-filter: blur(8px); 
+    /* backdrop-filter: blur(5px);
+    background-color: black */
+
+}
